@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body, html {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+body.bg-dark {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}
+.bg-dark {
+  background-color: #181818 !important;
+  color: #f1f1f1 !important;
+}
+.text-light {
+  color: #f1f1f1 !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0.7rem 0;
+}
+.navbar.bg-dark {
+  border-bottom: 1px solid #23272b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  border: none;
+}
+.card-header {
+  border-radius: 1rem 1rem 0 0;
+  background: #f5f5f5;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.card.bg-dark .card-header {
+  background: #23272b;
+}
+
+.table {
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background: #fff;
+}
+.table.bg-dark {
+  background: #23272b !important;
+}
+.table th, .table td {
+  vertical-align: middle !important;
+}
+.table-hover tbody tr:hover {
+  background-color: #f1f3f6;
+  transition: background 0.2s;
+}
+.table.bg-dark tbody tr:hover {
+  background-color: #23272b !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+.table.bg-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #20232a !important;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: box-shadow 0.2s;
+}
+.btn:focus, .btn:active {
+  box-shadow: 0 0 0 2px #007bff33;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+  border: none;
+}
+.btn-danger {
+  background: linear-gradient(90deg, #dc3545 60%, #a71d2a 100%);
+  border: none;
+}
+.btn-info {
+  background: linear-gradient(90deg, #17a2b8 60%, #0d6efd 100%);
+  border: none;
+}
+.btn-success {
+  background: linear-gradient(90deg, #28a745 60%, #218838 100%);
+  border: none;
+}
+
+/* Badge styles */
+.badge {
+  font-size: 0.95em;
+  padding: 0.4em 0.7em;
+  border-radius: 0.5em;
+  font-weight: 600;
+}
+.badge-success {
+  background: #28a745;
+  color: #fff;
+}
+.badge-danger {
+  background: #dc3545;
+  color: #fff;
+}
+.badge-secondary {
+  background: #6c757d;
+  color: #fff;
+}
+
+/* Add more spacing to main container */
+.container {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Dark mode tweaks for cards and tables */
+.card.bg-dark, .table.bg-dark {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+}
+.table.bg-dark th, .table.bg-dark td {
+  color: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+body.bg-dark ::-webkit-scrollbar {
+  background: #23272b;
+}
+body.bg-dark ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+.navbar .btn, .navbar .btn[type="submit"] {
+  height: 38px;
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.navbar .form-control {
+  height: 38px;
+}
+
+.landing-logo.animate-float {
+  animation: floatLogo 2.5s ease-in-out infinite alternate;
+}
+@keyframes floatLogo {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-18px); }
+}
+.animate-fadein {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+.animate-fadein:nth-child(2) { animation-delay: 0.2s; }
+.animate-fadein:nth-child(3) { animation-delay: 0.4s; }
+.animate-fadein:nth-child(4) { animation-delay: 0.6s; }
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.landing-hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.feature-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
+}
