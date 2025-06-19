@@ -2,6 +2,12 @@
 
 A full-stack web application to manage, track, and motivate students in competitive programming using the MERN stack (MongoDB, Express.js, React, Node.js). The app features Codeforces integration, automated reminders, and rich analytics.
 
+## Screenshots
+
+![Landing Page](client/public/landing.png)
+![Student List](client/public/studentlist.png)
+![Add Student Form](client/public/addstudentform.png)
+
 ---
 
 ## Features
