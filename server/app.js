@@ -37,6 +37,8 @@ const transporter = nodemailer.createTransport({
 // CRON JOB: Fetch Codeforces data for all students with a handle
  const cronSchedule = process.env.CF_CRON_SCHEDULE || '0 2 * * *'; // Default: 2 AM daily
 
+
+
 cron.schedule(cronSchedule, async () => {
   console.log('Running Codeforces data sync cron job...');
   try {
